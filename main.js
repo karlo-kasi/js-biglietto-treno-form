@@ -27,14 +27,14 @@ btn.addEventListener ( 'click', function(event){
     let nomePassegero = nameField.value
     let eta = etaField.value
     let km = parseFloat(kmField.value)
-
+    console.log (km)
 
     let prezzoBiglietto = km * euro;
     let prezzoBigliettoSconto1 = prezzoBiglietto * 0.8
     let prezzoBigliettoSconto2 = prezzoBiglietto * 0.6
     let prezzoFinale 
     
-
+    console.log (prezzoFinale)
 
     //condizione
     if (eta == "min") {
@@ -45,7 +45,7 @@ btn.addEventListener ( 'click', function(event){
          prezzoFinale = prezzoBiglietto
     }
 
-    console.log (prezzoFinale)
+    
 
     // inserisco i dati che mi ha dato il form
     nome.innerHTML = nomePassegero

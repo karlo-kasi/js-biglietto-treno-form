@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>js-biglietto-treno-form</title>
+    <!-- sezione link  -->
+    <!-- <link rel="stylesheet" href="./css/debug.css"> -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -12,21 +16,24 @@
     <h1 class="title">Calcola il prezzo del tuo biglietto</h1>
 
 
-    <form id="form">
-        <label for="exampleInputEmail1" class="form-label">Nome e Cognome</label>
-        <input id="name-field" value="" type="text">
-        <label for="exampleInputEmail1" class="form-label">Km da percorrere</label>
-        <input id="km-field" value="" type="text">
+    <form id="form" class="form-custom">
+        <div class="container">
+            <label for="exampleInputEmail1" class="form-label">Nome e Cognome</label>
+            <input id="name-field" value="" type="text">
+            <label for="exampleInputEmail1" class="form-label">Km da percorrere</label>
+            <input id="km-field" value="" type="text">
+    
+            <select id="select-field">
+                <option value="min">Minorenne</option>
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="over">Over 65</option>
+            </select>
+        </div>
+        
 
-        <select id="select-field">
-            <option value="min">Minorenne</option>
-            <option value="maggiorenne">18/64</option>
-            <option value="over">Over 65</option>
-        </select>
-
-        <div>
+        <div class="bottoni">
             <button id="btn">Genera</button>
-            <button id="btn2">Annula</button>
+            <button id="btn2" class="btndue">Annula</button>
         </div>
 
     </form>
